@@ -41,4 +41,24 @@
     <div ng-show="$ctrl.selected">Selection from a modal: {{ $ctrl.selected }}</div>
     <div class="modal-parent">
     </div>
+    <style>
+        .cdk-overlay-container {
+            position: fixed;
+            z-index: 1000;
+            pointer-events: none;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+        .modal-backdrop {
+            pointer-events: auto;
+        }
+        .modal-dialog {
+            pointer-events: auto;
+        }
+        .modal-open .modal {
+            pointer-events: auto;
+        }
+    </style>
 </div>
